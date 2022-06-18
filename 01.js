@@ -14,6 +14,14 @@ function menorMayor(numeros) {
   // y 15 es el número más grande (mayor) dentro del arreglo [4, 6, 1, 7, 15]
 
   // Tu código aca:
+  nuevoArray = [];
+  ordenar = function (a, b) {
+    return a - b;
+  }
+  sort = numeros.sort(ordenar);
+  nuevoArray.push(sort[0]);
+  nuevoArray.push(sort.pop());
+  return nuevoArray; 
 }
 
 // No modifiques nada debajo de esta linea //
